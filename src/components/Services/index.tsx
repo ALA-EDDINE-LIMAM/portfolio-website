@@ -1,5 +1,5 @@
 import React from 'react';
-import services from '../../../data/services';
+import services from '../../data/services';
 import ServiceCard from './ServiceCard';
 import SectionTitle from '../common/SectionTitle';
 

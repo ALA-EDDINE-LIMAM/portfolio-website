@@ -1,5 +1,5 @@
 import React from 'react';
-import educationData from '../../../data/education';
+import educationData from '../../data/education';
 import EducationCard from './EducationCard';
 import SectionTitle from '../common/SectionTitle';
 

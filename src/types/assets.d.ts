@@ -5,3 +5,8 @@ declare module '*.avif';
 declare module '*.webp';
 declare module '*.svg';
 declare module '*.pdf';
+declare module '*.PNG';
+declare module '*.JPG';
+declare module '*.JPEG';
+declare module '*.GIF';
+declare module '*.SVG';

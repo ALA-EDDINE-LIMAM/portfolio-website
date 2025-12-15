@@ -7,6 +7,7 @@ interface BlogPost {
     content: string;
     date?: string;
     image?: string;
+    author?: string;
 }
 
 interface BlogCardProps {
@@ -22,12 +23,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
                 <p className="blog-card-summary">{post.summary}</p>
                 <div className="blog-card-meta">
                     {post.date && <span className="blog-card-date">{post.date}</span>}
-                </div>
-            </div>
-        </div>
-    );
-};
-                    <span className="blog-card-author">{author}</span>
+                    {post.author && <span className="blog-card-author"> | {post.author}</span>}
                 </div>
             </div>
         </div>

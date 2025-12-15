@@ -177,10 +177,10 @@ const ExperiencePage: React.FC = () => {
   ];
 
   const stats = [
-    { number: "50+", label: "Students Trained" },
-    { number: "25+", label: "Projects Completed" },
-    { number: "5+", label: "Events Organized"},
-    { number: "6+", label: "Competitions" }
+    { number: "50+", label: "Students Trained", icon: "👨‍🎓" },
+    { number: "25+", label: "Projects Completed", icon: "✅" },
+    { number: "5+", label: "Events Organized", icon: "📅" },
+    { number: "6+", label: "Competitions", icon: "🏆" }
   ];
 
   return (

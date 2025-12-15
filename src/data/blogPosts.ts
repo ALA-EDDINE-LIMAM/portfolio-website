@@ -1,4 +1,4 @@
-export default blogPosts;
+const blogPosts = [
   {
     id: 1,
     title: "Understanding React Hooks",
@@ -87,6 +87,6 @@ export default blogPosts;
     date: "2023-10-20",
     author: "Alice Johnson",
   },
-];export default blogPosts; 
-  
+];
+
 export default blogPosts; 
