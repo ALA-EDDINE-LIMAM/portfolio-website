@@ -212,7 +212,6 @@ const ExperiencePage: React.FC = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <span className="stat-icon">{stat.icon}</span>
               <span className="stat-number">{stat.number}</span>
               <span className="stat-label">{stat.label}</span>
             </motion.div>
