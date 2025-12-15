@@ -20,4 +20,7 @@ export const educationData = [
     endYear: 2021,
     description: "Completed a series of courses on JavaScript and React."
   }
-];
+];export default educationData; 
+export default educationData; 
+  
+export default educationData; 

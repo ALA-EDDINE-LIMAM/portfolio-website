@@ -1,14 +1,21 @@
 import React from 'react';
-import { servicesData } from '../../../data/services';
+import services from '../../../data/services';
 import ServiceCard from './ServiceCard';
 import SectionTitle from '../common/SectionTitle';
+
+interface ServiceItem {
+    id: number;
+    title: string;
+    description: string;
+    icon: string;
+}
 
 const Services: React.FC = () => {
     return (
         <section id="services">
             <SectionTitle title="My Services" />
             <div className="services-container">
-                {servicesData.map((service) => (
+                {services.map((service: ServiceItem) => (
                     <ServiceCard key={service.id} service={service} />
                 ))}
             </div>

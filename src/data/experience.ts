@@ -35,4 +35,6 @@ export const experienceData = [
     endDate: "February 2020",
     description: "Contributed to the development of a mobile application using React Native. Collaborated with the team to implement new features and fix bugs.",
   },
-];
+];export default experienceData; 
+  
+export default experienceData; 

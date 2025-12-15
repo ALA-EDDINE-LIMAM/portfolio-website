@@ -9,7 +9,7 @@ import iot from '../components/images/iot.jpg';
 import inov from '../components/images/inov.avif'; 
 import teach from '../components/images/teaching.jpg';
 import se from '../components/images/se.jpg';
-import comp from '../components/images/cert.png';
+import comp from '../components/images/cert.PNG';
 
 const AboutPage: React.FC = () => {
   return (

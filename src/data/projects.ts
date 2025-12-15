@@ -1,5 +1,3 @@
-import { projects } from './data/projects';
-
 export const projects = [
   {
     id: 1,
@@ -39,4 +37,6 @@ export const projects = [
   }
 ];
 
-export default projects;
+export default projects;export default projects; 
+  
+export default projects; 

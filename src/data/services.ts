@@ -29,4 +29,7 @@ export const services = [
     description: "Providing expert advice to help you achieve your business goals.",
     icon: "💼",
   },
-];
+];export default services; 
+export default services; 
+  
+export default services; 

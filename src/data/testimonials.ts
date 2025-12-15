@@ -34,4 +34,6 @@ export const testimonials = [
     position: "Marketing Director, Company E",
     company: "Company E",
   },
-];
+];export default testimonials; 
+  
+export default testimonials; 

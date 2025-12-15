@@ -87,4 +87,6 @@ export const blogPosts = [
     date: "2023-10-20",
     author: "Alice Johnson",
   },
-];
+];export default blogPosts; 
+  
+export default blogPosts; 

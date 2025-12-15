@@ -36,4 +36,6 @@ export const skills = [
       { name: 'Time Management', level: 'Advanced' },
     ],
   },
-];
+];export default skills; 
+  
+export default skills; 

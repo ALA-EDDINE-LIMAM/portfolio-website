@@ -5,18 +5,18 @@ import './ProjectsPage.css';
 
 // Import available project images
 import ImprimerieImage from '../components/images/imprimerieWebsite.png';
-import PfeImage from '../components/images/pfeProject.png';
+import PfeImage from '../components/images/pfeProject.PNG';
 import PfaImage from '../components/images/SmartFactory.png';
-import levelmage from '../components/images/levelSensor.png';
-import gymweb from '../components/images/gymWeb.png';
+import levelmage from '../components/images/levelSensor.PNG';
+import gymweb from '../components/images/gymWeb.PNG';
 import deeplearning from '../components/images/deeplearning.png';
 import chessCv from '../components/images/perfect_read.png';
 import rpiIot from '../components/images/rpi_iot.png';
-import portfolio from '../components/images/portfolio.png';
-import ps3 from '../components/images/ps3tt.png';
-import edurobot from '../components/images/ROBI.png';
+import portfolio from '../components/images/portfolio.PNG';
+import ps3 from '../components/images/ps3tt.PNG';
+import edurobot from '../components/images/ROBI.PNG';
 import parking from '../components/images/SPS.png';
-import esp32 from '../components/images/SHome.png';
+import esp32 from '../components/images/SHome.PNG';
 import ai from '../components/images/ai.png';
 import stm from '../components/images/stm32.jpg';
 
