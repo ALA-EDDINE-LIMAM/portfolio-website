@@ -105,40 +105,46 @@
 /* Hamburger Menu */
 .navbar-toggle {
   display: none;
-  background: none;
+  background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 10px;
   z-index: 1001;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggle:hover {
+  transform: scale(1.1);
 }
 
 .hamburger {
   display: block;
-  width: 25px;
+  width: 30px;
   height: 3px;
-  background: white;
+  background: #fff;
   position: relative;
-  transition: all 0.3s ease;
-  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
 }
 
 .hamburger::before,
 .hamburger::after {
   content: '';
   position: absolute;
-  width: 25px;
+  width: 30px;
   height: 3px;
-  background: white;
-  transition: all 0.3s ease;
-  border-radius: 2px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+  left: 0;
 }
 
 .hamburger::before {
-  top: -8px;
+  top: -10px;
 }
 
 .hamburger::after {
-  top: 8px;
+  top: 10px;
 }
 
 .hamburger.active {
