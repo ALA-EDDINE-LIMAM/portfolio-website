@@ -1,4 +1,4 @@
-export const blogPosts = [
+export default blogPosts;
   {
     id: 1,
     title: "Understanding React Hooks",

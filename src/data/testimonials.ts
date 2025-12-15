@@ -1,4 +1,4 @@
-export const testimonials = [
+const testimonials = [
   {
     id: 1,
     quote: "This is the best service I've ever used! Highly recommend.",

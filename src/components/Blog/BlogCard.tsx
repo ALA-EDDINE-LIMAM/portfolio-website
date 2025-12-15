@@ -1,23 +1,32 @@
 import React from 'react';
 
-interface BlogCardProps {
+interface BlogPost {
+    id: number;
     title: string;
     summary: string;
-    date: string;
-    author: string;
-    imageUrl: string;
-    onClick: () => void;
+    content: string;
+    date?: string;
+    image?: string;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({ title, summary, date, author, imageUrl, onClick }) => {
+interface BlogCardProps {
+    post: BlogPost;
+}
+
+const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
     return (
-        <div className="blog-card" onClick={onClick}>
-            <img src={imageUrl} alt={title} className="blog-card-image" />
+        <div className="blog-card">
+            {post.image && <img src={post.image} alt={post.title} className="blog-card-image" />}
             <div className="blog-card-content">
-                <h3 className="blog-card-title">{title}</h3>
-                <p className="blog-card-summary">{summary}</p>
+                <h3 className="blog-card-title">{post.title}</h3>
+                <p className="blog-card-summary">{post.summary}</p>
                 <div className="blog-card-meta">
-                    <span className="blog-card-date">{date}</span>
+                    {post.date && <span className="blog-card-date">{post.date}</span>}
+                </div>
+            </div>
+        </div>
+    );
+};
                     <span className="blog-card-author">{author}</span>
                 </div>
             </div>

@@ -1,21 +1,37 @@
 import React from 'react';
 
-interface ProjectCardProps {
+interface ProjectItem {
+    id: number | string;
     title: string;
     description: string;
-    imageUrl: string;
-    projectUrl: string;
+    technologies: string[];
+    image: string;
+    link?: string;
+    liveDemo?: string;
+    category?: string;
+    featured?: boolean;
+    status?: string;
+    year?: string;
+    github?: string;
+    demo?: string;
+    highlights?: string[];
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl, projectUrl }) => {
+interface ProjectCardProps {
+    project: ProjectItem;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     return (
         <div className="project-card">
-            <img src={imageUrl} alt={title} className="project-image" />
-            <h3 className="project-title">{title}</h3>
-            <p className="project-description">{description}</p>
-            <a href={projectUrl} target="_blank" rel="noopener noreferrer" className="project-link">
-                View Project
-            </a>
+            <img src={project.image} alt={project.title} className="project-image" />
+            <h3 className="project-title">{project.title}</h3>
+            <p className="project-description">{project.description}</p>
+            {project.link && (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                    View Project
+                </a>
+            )}
         </div>
     );
 };

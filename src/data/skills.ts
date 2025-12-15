@@ -1,4 +1,4 @@
-export const skills = [
+const skills = [
   {
     category: 'Frontend',
     items: [

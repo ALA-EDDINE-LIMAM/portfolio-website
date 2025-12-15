@@ -1,4 +1,4 @@
-export const educationData = [
+const educationData = [
   {
     institution: "University of Example",
     degree: "Bachelor of Science in Computer Science",

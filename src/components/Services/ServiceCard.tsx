@@ -1,17 +1,22 @@
 import React from 'react';
 
-interface ServiceCardProps {
+interface ServiceItem {
+    id: number;
     title: string;
     description: string;
-    icon: React.ReactNode;
+    icon: string;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon }) => {
+interface ServiceCardProps {
+    service: ServiceItem;
+}
+
+const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
     return (
         <div className="service-card">
-            <div className="service-icon">{icon}</div>
-            <h3 className="service-title">{title}</h3>
-            <p className="service-description">{description}</p>
+            <div className="service-icon">{service.icon}</div>
+            <h3 className="service-title">{service.title}</h3>
+            <p className="service-description">{service.description}</p>
         </div>
     );
 };

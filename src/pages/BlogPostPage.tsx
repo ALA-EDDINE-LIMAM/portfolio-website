@@ -5,7 +5,7 @@ import './BlogPostPage.css';
 
 const BlogPostPage = () => {
     const { id } = useParams();
-    const post = blogPosts.find(post => post.id === parseInt(id));
+    const post = blogPosts.find(post => post.id === parseInt(id || '0'));
 
     if (!post) {
         return <div>Post not found</div>;

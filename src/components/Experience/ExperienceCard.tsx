@@ -1,19 +1,26 @@
 import React from 'react';
 
-interface ExperienceCardProps {
-    title: string;
+interface ExperienceItem {
+    id: number;
+    jobTitle: string;
     company: string;
-    date: string;
+    location: string;
+    startDate: string;
+    endDate: string;
     description: string;
 }
 
-const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, company, date, description }) => {
+interface ExperienceCardProps {
+    experience: ExperienceItem;
+}
+
+const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
     return (
         <div className="experience-card">
-            <h3 className="experience-title">{title}</h3>
-            <h4 className="experience-company">{company}</h4>
-            <p className="experience-date">{date}</p>
-            <p className="experience-description">{description}</p>
+            <h3 className="experience-title">{experience.jobTitle}</h3>
+            <h4 className="experience-company">{experience.company}</h4>
+            <p className="experience-date">{experience.startDate} - {experience.endDate}</p>
+            <p className="experience-description">{experience.description}</p>
         </div>
     );
 };

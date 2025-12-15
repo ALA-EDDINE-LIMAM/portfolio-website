@@ -1,4 +1,4 @@
-export const experienceData = [
+const experienceData = [
   {
     id: 1,
     jobTitle: "Frontend Developer",

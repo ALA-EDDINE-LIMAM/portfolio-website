@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect, RefObject } from 'react';
 
-const useScrollReveal = (ref, options = {}) => {
+const useScrollReveal = (ref: RefObject<HTMLElement>, options: IntersectionObserverInit = {}) => {
     useEffect(() => {
         const element = ref.current;
         if (!element) return;

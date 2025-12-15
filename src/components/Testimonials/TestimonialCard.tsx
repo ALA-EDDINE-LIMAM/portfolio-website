@@ -1,19 +1,25 @@
 import React from 'react';
 
-interface TestimonialCardProps {
-    name: string;
+interface TestimonialItem {
+    id: number;
+    quote: string;
+    author: string;
     position: string;
     company: string;
-    testimonial: string;
+    testimonial?: string; // Optional if quote is used
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, position, company, testimonial }) => {
+interface TestimonialCardProps {
+    testimonial: TestimonialItem;
+}
+
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
     return (
         <div className="testimonial-card">
-            <p className="testimonial-quote">"{testimonial}"</p>
+            <p className="testimonial-quote">"{testimonial.quote || testimonial.testimonial}"</p>
             <div className="testimonial-author">
-                <h4>{name}</h4>
-                <p>{position} at {company}</p>
+                <h4>{testimonial.author}</h4>
+                <p>{testimonial.position} at {testimonial.company}</p>
             </div>
         </div>
     );
