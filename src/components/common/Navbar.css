@@ -180,7 +180,9 @@
     right: 0;
     width: 300px; /* Fixed width drawer */
     height: 100vh;
-    background: #1a1a2e; /* Solid dark background */
+    background: rgba(26, 26, 46, 0.85); /* Semi-transparent */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
     flex-direction: column;
     justify-content: flex-start; /* Align to top */
